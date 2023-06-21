@@ -9,19 +9,29 @@ const Carousel = () => {
   const slides = [
     {
       url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
+      message1: 'Adios!',
+      message2: 'Hm'
     },
     {
       url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+      message1: 'Chao!',
+      message2: 'Bee'
     },
     {
       url: 'https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80',
+      message1: 'Hello!',
+      message2: 'Too'
     },
 
     {
       url: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80',
+      message1: 'Hi!',
+      message2: 'Very'
     },
     {
       url: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80',
+      message1: 'Bye!',
+      message2: 'Sweet'
     },
   ];
 
@@ -50,9 +60,9 @@ const Carousel = () => {
           className='w-full h-full rounded-2xl bg-center bg-cover duration-500 relative'
         >
               <div className="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
-    <h1 className="text-white font-semibold text-4xl">Hello! </h1>
+    <h1 className="text-white font-semibold text-4xl">{slides[currentIndex].message1}</h1>
     <p className="text-gray-200">
-    I'm Courtney Lippman.
+    {slides[currentIndex].message2}
     </p>
   </div>
         </div>
