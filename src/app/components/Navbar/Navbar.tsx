@@ -7,7 +7,7 @@ const Navbar = () => {
     >
         <div className="grid grid-cols-2 gap-x-8 w-screen">
         <p className="logo flex justify-center items-end text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">c. lippman</p>
-        <div className="nav-wrapper justify-center items-end hidden md:flex border-purple border-2">
+        <div className="nav-wrapper justify-center items-end hidden md:flex">
             <p className="px-8 md:text-2xl lg:text-3xl xl:text-4xl ">Work</p>
             <p className="px-8  md:text-2xl lg:text-3xl xl:text-4xl">About</p>
             <p className="px-8 md:text-2xl lg:text-3xl xl:text-4xl">Contact</p>
