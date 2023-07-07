@@ -30,18 +30,19 @@ const WorkSection = () => {
   ];
 
   return (
-    <section>
-      <h1 className="text-center mb-8">Recent Projects</h1>
+    <section className="my-20">
+      <h1 className="text-center text-xl mb-14">Recent Projects</h1>
       <section className="grid grid-flow-row grid-cols-2 gap-5">
-        {projects.map((project, projectIndex) => (
+        {projects.map((project) => (
           <div className="image-container">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              className="image rounded-2xl mx-3 hover:greyscale-3"
-              // onClick={Go to project repo (should the div be link then?)}
-            />
+            <a href={project.link}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="image rounded-2xl m-3"
+              />
+            </a>
           </div>
         ))}
       </section>
