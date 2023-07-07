@@ -39,7 +39,7 @@ const WorkSection = () => {
               src={project.image}
               alt={project.title}
               fill
-              className="image rounded-2xl mx-3"
+              className="image rounded-2xl mx-3 hover:greyscale-3"
               // onClick={Go to project repo (should the div be link then?)}
             />
           </div>
