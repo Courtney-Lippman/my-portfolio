@@ -13,7 +13,6 @@ const HamburgerMenu: FC<HamburgerMenuProps> = ({
     setShowMobileMenu(!showMobileMenu);
     console.log("showMobileMenu", showMobileMenu);
   };
-  //may need a useEffect to change the state correctly?
 
   return (
     <div className="md:hidden flex items-center justify-end px-8">

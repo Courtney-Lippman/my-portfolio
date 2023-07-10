@@ -5,7 +5,11 @@ import MobileMenu from "./MobileMenu/MobileMenu";
 import "./Navbar.css";
 import { useState } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+  setNavToPage: (clicked: string) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ setNavToPage }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
@@ -20,7 +24,7 @@ const Navbar = () => {
           setShowMobileMenu={setShowMobileMenu}
         />
       </div>
-      {showMobileMenu && <MobileMenu />}
+      {showMobileMenu && <MobileMenu setNavToPage={setNavToPage} />}
     </nav>
   );
 };
