@@ -1,6 +1,6 @@
 const MobileMenu = () => {
   return (
-    <div className="hidden mobile-menu md:hidden flex items-center justify-end px-8">
+    <div className="mobile-menu md:hidden flex items-center justify-end px-8">
       <ul>
         <li className="active">
           <a
