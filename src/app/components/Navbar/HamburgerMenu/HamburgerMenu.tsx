@@ -10,8 +10,8 @@ const HamburgerMenu: FC<HamburgerMenuProps> = ({
   setShowMobileMenu
 }) => {
   const handleHamburgerClick = () => {
-    setShowMobileMenu(true);
-    console.log("showMobile", showMobileMenu);
+    setShowMobileMenu(!showMobileMenu);
+    console.log("showMobileMenu", showMobileMenu);
   };
 
   return (
