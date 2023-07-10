@@ -12,12 +12,19 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ setNavToPage }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+  const handleClick = () => {
+    setNavToPage("home");
+  };
+
   return (
     <nav className="h-1/3">
       <div className="grid grid-cols-2 gap-x-8 w-screen">
-        <p className="logo flex justify-center items-end text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+        <button
+          className="logo flex justify-center items-end text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+          onClick={handleClick}
+        >
           c. lippman
-        </p>
+        </button>
         <DeskTopMenu />
         <HamburgerMenu
           showMobileMenu={showMobileMenu}
