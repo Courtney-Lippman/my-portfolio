@@ -20,7 +20,7 @@ const Navbar = () => {
           setShowMobileMenu={setShowMobileMenu}
         />
       </div>
-      <MobileMenu />
+      {showMobileMenu && <MobileMenu />}
     </nav>
   );
 };
