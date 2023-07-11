@@ -30,7 +30,7 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className="my-20">
+    <section className="my-20" id="work-section">
       <h1 className="text-center text-xl mb-14">Recent Projects</h1>
       <section className="grid grid-flow-row grid-cols-2 gap-5">
         {projects.map((project) => (
