@@ -25,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ setNavToPage }) => {
         >
           c. lippman
         </button>
-        <DeskTopMenu />
+        <DeskTopMenu setNavToPage={setNavToPage} />
         <HamburgerMenu
           showMobileMenu={showMobileMenu}
           setShowMobileMenu={setShowMobileMenu}
