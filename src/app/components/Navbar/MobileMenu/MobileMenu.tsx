@@ -14,13 +14,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ setNavToPage }) => {
     <div className="mobile-menu md:hidden flex items-center justify-end px-8">
       <ul>
         <li className="active">
-          <button
+          <a
             className="block text-md px-2 py-4 text-white bg-slate-400 font-semibold rounded"
-            onClick={handleClick}
-            value="work-button"
+            href="#work-section"
           >
             Work
-          </button>
+          </a>
         </li>
         <li>
           <button
