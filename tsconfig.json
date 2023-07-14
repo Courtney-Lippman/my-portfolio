@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/Navbar/DesktopMenu"
+    "src/app/Navbar/DesktopMenu"
   ],
   "exclude": ["node_modules"]
 }
